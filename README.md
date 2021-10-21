@@ -2,12 +2,10 @@ by Jérémy Serenne
 
 # Todo -list Project
 
-This Todo -list application is a simple TODO application.
+This Todo -list application is a simple TODO application where you can add, edit or remove todo tasks.
 
-# My own evaluation on the project
+Developed in Javascript without any external libraries.
 
-Give you own evaluation according the evaluation criterias.
+# Deployment links
 
-Here is the link to GitHub: https://github.com/jeremy-serenne/todo-list-js-app
-
-And here the link to Netlify: 
+Here the link where the app is deployed: https://modest-feynman-75dcf8.netlify.app/
