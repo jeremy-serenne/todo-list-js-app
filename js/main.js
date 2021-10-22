@@ -34,7 +34,11 @@ itemsList.addEventListener('click', function(event) {
 
 /* Add new item when trigger */
 function addItem(itemName) {
-    if (itemName !== '') { /* Check if item is empty, otherwise display an error */
+    if (itemName == '') { /* Display an error if the item is empty */
+        alert("The name is empty! Please fill it in.");
+    } else if (itemName.length < 2) {
+        alert("The name is too short! Between 5-50 letters/numbers.");
+    } else {
         const item = {
             id: Date.now(),
             /* The id will help to manage the storage */
@@ -43,12 +47,7 @@ function addItem(itemName) {
         };
         items.push(item);
         addToLocalStorage(items);
-
-        itemInput.value = '';
-    } else if (itemName.length < 2 ) {
-        alert("The name is too short! Between 5-50 letters/numbers.");
-    } else {
-        alert("The name is empty! Please fill it in.");
+        itemInput.value = ''; /* reset the input case */
     }
 
 }
