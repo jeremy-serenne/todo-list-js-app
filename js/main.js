@@ -36,7 +36,7 @@ itemsList.addEventListener('click', function(event) {
 function addItem(itemName) {
     if (itemName == '') { /* Display an error if the item is empty */
         alert("The name is empty! Please fill it in.");
-    } else if (itemName.length < 2) {
+    } else if (itemName.length <= 4) {
         alert("The name is too short! Between 5-50 letters/numbers.");
     } else {
         const item = {
