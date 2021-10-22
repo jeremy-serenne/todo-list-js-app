@@ -45,6 +45,8 @@ function addItem(itemName) {
         addToLocalStorage(items);
 
         itemInput.value = '';
+    } else if (itemName.length < 2 ) {
+        alert("The name is too short! Between 5-50 letters/numbers.");
     } else {
         alert("The name is empty! Please fill it in.");
     }
